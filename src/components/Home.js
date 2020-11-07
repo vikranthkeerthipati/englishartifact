@@ -34,8 +34,8 @@ export default class Home extends React.Component{
     
             <Jumbotron fluid style={jumboStyle}>
                 <Row>
-                    <Col sm={5}></Col>
-                    <Col sm={6}>
+                    <Col md={5}></Col>
+                    <Col md={6}>
             <Bounce left big>
               <h1>Food and our Identity</h1>
               <p>
@@ -49,8 +49,8 @@ export default class Home extends React.Component{
 
               </Row>
               <Row>
-                  <Col sm={5}> </Col>
-                  <Col sm={6}>
+                  <Col md={5}> </Col>
+                  <Col md={6}>
                     <Script config={config.slow}>{styles => <div className="down"><img src={downp} style={styles}></img></div>}</Script>
 
                   </Col>

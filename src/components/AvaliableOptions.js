@@ -18,10 +18,16 @@ let cardStyle = {
     marginTop: "15vh",
     borderRadius:"25px",
     height:"60vh",
-    zIndex: "1000"
+    zIndex: "1000",
+    backgroundColor: "rgba(233,225,213,0.9)"
+
 }
 let cardImgStyle = {
-    borderRadius:"25px 25px 0px 0px" 
+    borderRadius:"25px 25px 0px 0px",
+}
+
+let cardButtonStyle = {
+    borderRadius:"0px 0px 25px 25px" 
 }
 
 
@@ -47,7 +53,7 @@ export default class AvaliableOptions extends React.Component{
       to remember our loved ones.
     </Card.Text>
   </Card.Body>
-  <Button variant="dark">Visit!</Button>
+  <Button variant="dark" style={cardButtonStyle}>Visit!</Button>
 </Card>
 </Col>
 <Col><Card style={cardStyle}>
@@ -58,7 +64,7 @@ export default class AvaliableOptions extends React.Component{
       Food plays an integral part in culture, and is often passed down from generation to generation.
     </Card.Text>
   </Card.Body>
-  <Button variant="dark">Visit!</Button>
+  <Button variant="dark" style={cardButtonStyle}>Visit!</Button>
 </Card></Col>
 <Col><Card style={cardStyle}>
   <Card.Img variant="top" src={fad} style={cardImgStyle}/>
@@ -68,7 +74,7 @@ export default class AvaliableOptions extends React.Component{
       As food evolves, so do our habits. It's amazing to see how our current eating habits revolve around past advancements in food.
     </Card.Text>
   </Card.Body>
-  <Button variant="dark">Visit!</Button>
+  <Button variant="dark" style={cardButtonStyle}>Visit!</Button>
 
 </Card>
 </Col>
