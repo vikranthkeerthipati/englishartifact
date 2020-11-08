@@ -8,6 +8,8 @@ import {
 import Home from './components/Home'
 import { animated,useTransition } from "react-spring";
 import Memory from './components/Memory';
+import Culture from './components/Culture'
+import Society from './components/Society'
 
 export default function App() {
 
@@ -18,7 +20,7 @@ export default function App() {
               
               <Route path="/memory" component={Memory} />
               <Route path="/culture" component={Culture} />
-              <Route path="/habits" component={Memory} />
+              <Route path="/society" component={Society} />
               <Route path="/" component={Home} />
             </Switch> 
 
@@ -29,11 +31,7 @@ export default function App() {
 
 
 
-function Culture() {
-  return <h2>Your dad</h2>;
-}
 
-function Habits(){
-  return<h2>Your sis</h2>
-}
+
+
 }

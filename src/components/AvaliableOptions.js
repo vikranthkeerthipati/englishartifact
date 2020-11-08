@@ -69,9 +69,9 @@ export default class AvaliableOptions extends React.Component{
 <Col><Card style={cardStyle}>
   <Card.Img variant="top" src={fad} style={cardImgStyle}/>
   <Card.Body>
-    <Card.Title>Food and Habits</Card.Title>
+    <Card.Title>Food and Society</Card.Title>
     <Card.Text>
-      As food evolves, so do our habits. It's amazing to see how our current eating habits revolve around past advancements in food.
+      As food evolves, so do our habits. It's amazing to see how our current society can revolve around past advancements in food.
     </Card.Text>
   </Card.Body>
   <Button variant="dark" href="/habits" style={cardButtonStyle}>Visit!</Button>

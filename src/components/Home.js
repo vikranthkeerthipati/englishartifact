@@ -11,7 +11,7 @@ import EngNavbar from './EngNavbar';
 
 
 let jumboStyle = {
-    height:"100vh",
+    minHeight:"100vh",
     backgroundImage: `url(${bgImage})`,
     backgroundSize:'cover',
     marginBottom:"0px"
