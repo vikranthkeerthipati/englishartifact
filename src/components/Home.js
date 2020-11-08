@@ -6,6 +6,9 @@ import {Keyframes,animated,Spring,config} from 'react-spring/renderprops'
 import down from '../img/down.svg'
 import downp from '../img/downp.png'
 import '../css/down.css'
+import AvaliableOptions from './AvaliableOptions'
+import EngNavbar from './EngNavbar';
+
 
 let jumboStyle = {
     height:"100vh",
@@ -31,7 +34,10 @@ export default class Home extends React.Component{
     render(){
 
         return(
-    
+
+            <>
+                        <EngNavbar color="#000000" invert={true}/>
+
             <Jumbotron fluid style={jumboStyle}>
                 <Row>
                     <Col md={5}></Col>
@@ -56,6 +62,8 @@ export default class Home extends React.Component{
                   </Col>
               </Row>
           </Jumbotron>
+          <AvaliableOptions />
+          </>
         );
     }
 }

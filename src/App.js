@@ -2,45 +2,38 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  useLocation
 } from "react-router-dom";
-import EngNavbar from './components/EngNavbar';
-import AvaliableOptions from './components/AvaliableOptions'
 import Home from './components/Home'
+import { animated,useTransition } from "react-spring";
+import Memory from './components/Memory';
 
 export default function App() {
+
+
   return (
-    <Router>
       <>
-      <EngNavbar color="black"/>
+              <Switch>
+              
+              <Route path="/memory" component={Memory} />
+              <Route path="/culture" component={Culture} />
+              <Route path="/habits" component={Memory} />
+              <Route path="/" component={Home} />
+            </Switch> 
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Home />
-            <AvaliableOptions />
-          </Route>
-        </Switch>
-
-      </>
-    </Router>
+            </>
   );
+
+
+
+
+
+function Culture() {
+  return <h2>Your dad</h2>;
 }
 
-
-function About() {
-  return <h2>About</h2>;
+function Habits(){
+  return<h2>Your sis</h2>
 }
-
-function Users() {
-  return <h2>Users</h2>;
 }
-
-
