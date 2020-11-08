@@ -3,7 +3,6 @@ import bgImage from '../img/famcover.jpg'
 import psychImage from '../img/psych.jpg'
 import famImage from '../img/fam.jpg'
 import EngNavbar from './EngNavbar'
-import ResourceLinks from './ResourceLinks'
 import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade';
 

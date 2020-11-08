@@ -16,18 +16,19 @@ let jumboStyle = {
 
 let cardStyle = {
     marginTop: "15vh",
-    borderRadius:"25px",
-    height:"60vh",
+    borderRadius:"10px",
+    height:"50vh",
     zIndex: "1000",
     backgroundColor: "rgba(233,225,213,0.9)"
 
 }
 let cardImgStyle = {
-    borderRadius:"25px 25px 0px 0px",
+    borderRadius:"10x 10px 0px 0px",
 }
 
 let cardButtonStyle = {
-    borderRadius:"0px 0px 25px 25px" 
+    borderRadius:"0px 0px 10px 10px",
+    backgroundColor: "rgba(0,0,0,0.8)"
 }
 
 

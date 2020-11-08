@@ -50,6 +50,7 @@ export default class EngNavbar extends React.Component{
       <Nav.Link style={{color: this.state.color}} href="/memory">Food and Memory</Nav.Link>
       <Nav.Link style={{color: this.state.color}}href="/culture">Food and Culture</Nav.Link>
       <Nav.Link style={{color: this.state.color}}href="/society">Food and Society</Nav.Link>
+      <Nav.Link style={{color: this.state.color}}href="/">Works Cited</Nav.Link>
 
     </Nav>
   </Navbar>

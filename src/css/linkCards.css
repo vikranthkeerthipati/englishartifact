@@ -1,0 +1,10 @@
+.modal-dialog {
+
+    max-width: 80%!important;
+}
+
+.btn{
+    color: black!important;
+    background:none!important;
+    border:none!important;
+}
