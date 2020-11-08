@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/englishartifact/static/css/main.71991831.chunk.css",
-    "main.js": "/englishartifact/static/js/main.ff7c0b16.chunk.js",
-    "main.js.map": "/englishartifact/static/js/main.ff7c0b16.chunk.js.map",
+    "main.css": "/englishartifact/static/css/main.7af1b246.chunk.css",
+    "main.js": "/englishartifact/static/js/main.b79c88ef.chunk.js",
+    "main.js.map": "/englishartifact/static/js/main.b79c88ef.chunk.js.map",
     "runtime-main.js": "/englishartifact/static/js/runtime-main.5c887e48.js",
     "runtime-main.js.map": "/englishartifact/static/js/runtime-main.5c887e48.js.map",
     "static/js/2.311780f1.chunk.js": "/englishartifact/static/js/2.311780f1.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.8b8d8a40.chunk.js": "/englishartifact/static/js/3.8b8d8a40.chunk.js",
     "static/js/3.8b8d8a40.chunk.js.map": "/englishartifact/static/js/3.8b8d8a40.chunk.js.map",
     "index.html": "/englishartifact/index.html",
-    "static/css/main.71991831.chunk.css.map": "/englishartifact/static/css/main.71991831.chunk.css.map",
+    "static/css/main.7af1b246.chunk.css.map": "/englishartifact/static/css/main.7af1b246.chunk.css.map",
     "static/js/2.311780f1.chunk.js.LICENSE.txt": "/englishartifact/static/js/2.311780f1.chunk.js.LICENSE.txt",
     "static/media/avaliableoptions.34fa9658.jpg": "/englishartifact/static/media/avaliableoptions.34fa9658.jpg",
     "static/media/bridge.d27ac244.jpg": "/englishartifact/static/media/bridge.d27ac244.jpg",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.5c887e48.js",
     "static/js/2.311780f1.chunk.js",
-    "static/css/main.71991831.chunk.css",
-    "static/js/main.ff7c0b16.chunk.js"
+    "static/css/main.7af1b246.chunk.css",
+    "static/js/main.b79c88ef.chunk.js"
   ]
 }
