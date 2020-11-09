@@ -5,6 +5,7 @@ import worksCitedImage from '../img/workscited.jpg'
 import worksCited from "../files/works_cited.pdf"
 import EngNavbar from './EngNavbar'
 import '../css/linkCards.css'
+import Fade from 'react-reveal/Fade'
 
 let worksCitedUrl = `url(${worksCited})`
 export default function WorksCited(){
@@ -18,6 +19,7 @@ export default function WorksCited(){
     return (
     <>
         <EngNavbar color="black"></EngNavbar>
+        <Fade right>
         <Jumbotron style={jumboStyle} fluid>
             <Row>
                 <Col md={6}></Col>
@@ -28,6 +30,7 @@ export default function WorksCited(){
             </Row>
 
         </Jumbotron>
+        </Fade>
         </>
     );
 
