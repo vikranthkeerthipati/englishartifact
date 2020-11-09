@@ -1,12 +1,35 @@
-import {Row,Col,Modal,Jumbotron, Container} from 'react-bootstrap'
+import {useState, useEffect} from 'react'
+import {Image,Button,Row,Col,Modal,Jumbotron, Container} from 'react-bootstrap'
 import bgImage from '../img/famcover.jpg'
 import psychImage from '../img/psych.jpg'
 import famImage from '../img/fam.jpg'
 import EngNavbar from './EngNavbar'
 import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade';
-
+import Iframe from 'react-iframe'
 export default function Memory() {
+    const[mShow, setMShow] = useState(false);
+    const[moShow,setMoShow] = useState(false);
+    const[aShow, setAShow] = useState(false);
+    const[bShow, setBShow] = useState(false);
+
+
+    const handleMClose = () => setMShow(false);
+    const handleMShow = () => setMShow(true);
+    const handleMoClose = () => setMoShow(false);
+    const handleMoShow = () => setMoShow(true);
+    const handleAClose = () => setAShow(false)
+    const handleAShow = () => setAShow(true);
+    const handleBClose = () => setBShow(false)
+    const handleBShow = () => setBShow(true);
+
+
+    let linkStyle = {
+        color: "black",
+        background:"none",
+        border: "none"
+    }
+
     let jumboStyle = {
         minHeight:"100vh",
         backgroundImage:  `url(${bgImage})`,
@@ -59,14 +82,98 @@ export default function Memory() {
                         </div>
                         </Fade>
                     </Col>
+                    <Col md={1}></Col>
                     <Col md={5}>
+                    <Fade right>
+                <div style={{backgroundColor:"rgba(128,119,127,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
+                    <Button class="linkButton" style={linkStyle} onClick={handleMShow}><h3 style={{color:"white"}}>Discover food nostalgia!</h3></Button>                    
+                </div>
+                <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={mShow} onHide={handleMClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Food and Nostalgia</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <Row>
+                <Col md={2}></Col>
+                <Col>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LlAEJGxv5_4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </Col>
+        <Col md={2}></Col>
+        </Row>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleMClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+                <div style={{backgroundColor:"rgba(128,119,127,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
+                    <Button class="linkButton" style={linkStyle} onClick={handleMoShow}><h3 style={{color:"white"}}>Discover food and mood!</h3></Button> 
+                        <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={moShow} onHide={handleMoClose}>
+            <Modal.Header closeButton>
+            <Modal.Title>How Food Affects Mood</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+            <Iframe width="100%" height="188px" src="https://embed.acast.com/deliciouslyellapodcast/howourfoodaffectsourmood" scrolling="no" frameBorder="0" style="border:none;overflow:hidden;"></Iframe>
+            <p></p>
+            </Modal.Body>
+            <Modal.Footer>
+            <Button variant="secondary" onClick={handleMoClose}>
+                Close
+            </Button>
+            </Modal.Footer>
+        </Modal>
+                </div>
+                </Fade>
+
                     </Col>
                 </Row>
             </Jumbotron>
             <Jumbotron fluid style={famStyle}>
                 <Row>
+                <Col md={5}>
+                    
+                    <Fade left>
+                <div style={{backgroundColor:"rgba(0,0,0,0.8)",marginTop:"5vh", padding:"4vh 4vh"}}>
+                    <Button class="linkButton" style={linkStyle} onClick={handleAShow}><h3 style={{color:"white"}}>The Impact of Ancestral Food Choices</h3></Button>                    
+                </div>
+                <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={aShow} onHide={handleAClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>How have your ancestors affected your food choices?</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <Row>
+                <Col md={2}></Col>
+                <Col>
+                <Iframe width="100%" height="315" src="https://www.youtube.com/embed/mC_auaI3TOE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></Iframe>        </Col>
+        <Col md={2}></Col>
+        </Row>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleAClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+                <div style={{backgroundColor:"rgba(0,0,0,0.8)",marginTop:"5vh", padding:"4vh 4vh"}}>
+                    <Button class="linkButton" style={linkStyle} onClick={handleBShow}><h3 style={{color:"white"}}>Familial Food Values</h3></Button> 
+                        <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={bShow} onHide={handleBClose}>
+            <Modal.Header closeButton>
+            <Modal.Title>Familial Food Values and their Impact</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+            <Iframe style="border: solid 1px #dedede;"  src="https://app.stitcher.com/splayer/f/65860/66728554" width="100%" height="150" frameborder="0" scrolling="no"></Iframe> 
+            </Modal.Body>
+            <Modal.Footer>
+            <Button variant="secondary" onClick={handleBClose}>
+                Close
+            </Button>
+            </Modal.Footer>
+        </Modal>
+                </div>
+                </Fade>
+                   
+                    </Col> 
                     <Col md={1}></Col>
-                    <Col md={5}></Col>
                     <Col md={6}>
                         <Fade right>
                         <div style={{backgroundColor:"rgba(221,166,112,0.9)",borderRadius:"5px",marginTop:"5vh",padding:"4vh 4vh"}}>

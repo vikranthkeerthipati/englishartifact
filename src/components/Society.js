@@ -1,9 +1,10 @@
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 import {Image,Modal,Button,Row,Col,Jumbotron} from 'react-bootstrap'
 import societyImage from '../img/society.jpg'
 import fastFoodImage from '../img/fastfood.jpg'
 import inventionImage from '../img/invention.jpg'
 import mapleineImage from '../img/mapleine.png'
+import foodCartoonImage from '../img/foodcartoon.jpg'
 import Fade from 'react-reveal/Fade';
 import EngNavbar from './EngNavbar'
 import '../css/linkCards.css'
@@ -34,10 +35,13 @@ let fastFoodStyle = {
     backgroundSize:'cover',
     marginBottom:"0px"
 }
+
 export default function Society(){
         const[mShow, setMShow] = useState(false);
         const[moShow,setMoShow] = useState(false);
         const[aShow, setAShow] = useState(false);
+        const[bShow, setBShow] = useState(false);
+        const[cShow, setCShow] = useState(false);
 
         const handleMClose = () => setMShow(false);
         const handleMShow = () => setMShow(true);
@@ -45,7 +49,13 @@ export default function Society(){
         const handleMoShow = () => setMoShow(true);
         const handleAClose = () => setAShow(false)
         const handleAShow = () => setAShow(true);
+        const handleBClose = () => setBShow(false)
+        const handleBShow = () => setBShow(true);
+        const handleCClose = () => setCShow(false)
+        const handleCShow = () => setCShow(true);
 
+
+  
         return(
             <>
             <EngNavbar color="#FFFFFF" invert={false}/>
@@ -68,7 +78,7 @@ export default function Society(){
                 <Col md ={5}>
                 <Fade left>
                 <div style={{backgroundColor:"rgba(252,210,108,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
-                    <Button style={linkStyle} onClick={handleMShow}><h3>Witness the rise and fall of Mapleine!</h3></Button>                    
+                    <Button class="linkButton" style={linkStyle} onClick={handleMShow}><h3>Witness the rise and fall of Mapleine!</h3></Button>                    
                 </div>
                 <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={mShow} onHide={handleMClose}>
         <Modal.Header closeButton>
@@ -87,7 +97,7 @@ export default function Society(){
         </Modal.Footer>
       </Modal>
                 <div style={{backgroundColor:"rgba(252,210,108,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
-                    <Button style={linkStyle} onClick={handleMoShow}><h3>Experience mochi in the US!</h3></Button> 
+                    <Button class="linkButton" style={linkStyle} onClick={handleMoShow}><h3>Experience Mochi in the US!</h3></Button> 
                         <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={moShow} onHide={handleMoClose}>
             <Modal.Header closeButton>
             <Modal.Title>How Mochi Made Its Way to the US</Modal.Title>
@@ -109,8 +119,10 @@ export default function Society(){
         </Modal>
                 </div>
                 </Fade>
+                <Fade left>
                 <div style={{backgroundColor:"rgba(252,210,108,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
-                    <Button style={linkStyle} onClick={handleAShow}><h3>The Evolution of Southern Food</h3></Button> 
+             
+                    <Button class="linkButton" style={linkStyle} onClick={handleAShow}><h3>The Evolution of Southern Food</h3></Button> 
                         <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={aShow} onHide={handleAClose}>
             <Modal.Header closeButton>
             <Modal.Title>Southern Food and its Roots</Modal.Title>
@@ -127,6 +139,7 @@ export default function Society(){
             </Modal.Footer>
         </Modal>
                 </div>
+                </Fade>
                 </Col>
                 <Col md={1}></Col>
                 <Col md={6} style={{color:"black"}}>
@@ -143,7 +156,7 @@ export default function Society(){
                 <Row>
                 <Col md={6} style={{color:"black"}}>
                 <Fade left>
-                    <div style={{backgroundColor:"rgba(229,171,82,0.8)",marginTop:"20vh",padding:"4vh 4vh"}}>
+                    <div style={{backgroundColor:"rgba(229,171,82,0.9)",marginTop:"20vh",padding:"4vh 4vh"}}>
                         <h1>Fast Food</h1>
                         <p>Fast food and junk food have drastically changed the how we eat, with this unhealthy form of food sometimes being more accessible in areas dealing with food apartheid than fresh produce. In an interview with The Guardian, food activist Karen Washington mentions that “in [her] neighborhood, there is a fast-food restaurant on every block, from Wendy’s to Kentucky Fried Chicken to Popeye’s to Little Caesar’s Pizza” (Brones). Washington is mostly present in low-income areas that face the problem of food apartheid, and also notices that resources are put into the treatment of the health problems faced by those in low income areas, instead of preventing those problems. Our current society is making fresh food inaccessible, whereas in the past people were able to have a plot of land, even if it took everything, and grow crops. As our society has industrialized, this opportunity has dwindled down and we rely more on mass agriculture than ever before, leaving those who can’t afford products out of mass agriculture stuck with food apartheid.</p>
                         <p>The problem of fast food and junk food negatively impacting society not only affects the US but is also affecting other countries as well. In a study conducted in Thailand, it was seen that “rapid changes in diet, with increasing consumption of oil, animal. Fats and protein, and decreasing consumption of vegetables and fruit, are factors influencing Thailand’s obesity problems” (Seubsman). Adding on to that, “Thailand’s expenditure on [Western-style fast-food] increased by 40% in the period 1999-2000.” These statistics show the impact that fast food chains such as McDonald’s can have, and not only is the cause of increasing health problems, but also a loss of culture in certain countries.</p>
@@ -151,7 +164,48 @@ export default function Society(){
                     </Fade>
                 </Col>
                 <Col md ={1}></Col>
-                <Col md={5}></Col>
+                <Col md={5}>
+                <Fade right>
+                <div style={{backgroundColor:"rgba(128,119,127,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
+                    <Button class="linkButton" style={linkStyle} onClick={handleBShow}><h3 style={{color:"white"}}>Fast Food and Future Generations</h3></Button>                    
+                </div>
+                <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={bShow} onHide={handleBClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>The Impact of Fast Food on Future Generations</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <Row>
+                <Col md={2}></Col>
+                <Col>
+                <Image src={foodCartoonImage} width="100%"></Image>
+        </Col>
+        <Col md={2}></Col>
+        </Row>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleBClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+                <div style={{backgroundColor:"rgba(128,119,127,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
+                    <Button class="linkButton" style={linkStyle} onClick={handleCShow}><h3 style={{color:"white"}}>The Health Effects of Fast Food</h3></Button> 
+                        <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={cShow} onHide={handleCClose}>
+            <Modal.Header closeButton>
+            <Modal.Title>The Negative Effects of Fast Food and Alternatives</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+            <Iframe frameborder="0" height="200" scrolling="no" src="https://embed.radiopublic.com/e?if=the-mindvalley-podcast-with-vishe-Gy0NVp&ge=s1!01b5307bd042cfaff2f4185b2d7840ab18dccb37&autoplay=1&auto_play=1" width="100%"></Iframe>            <p></p>
+            </Modal.Body>
+            <Modal.Footer>
+            <Button variant="secondary" onClick={handleCClose}>
+                Close
+            </Button>
+            </Modal.Footer>
+        </Modal>
+                </div>
+                </Fade>
+                </Col>
 
                 </Row>
             </Jumbotron>

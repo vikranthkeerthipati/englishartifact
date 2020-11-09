@@ -1,6 +1,7 @@
 import {Navbar,Nav} from 'react-bootstrap'
 import React from 'react';
 import invert from 'invert-color';
+import icon from '../img/FI.png'
 
 
 
@@ -43,17 +44,26 @@ export default class EngNavbar extends React.Component{
             opacity: this.state.opacity
         }
     return(
+      <>
+      <head>
+      <meta http-equiv='cache-control' content='no-cache'></meta>
+      </head>
     <Navbar style={{backgroundColor:this.state.bkgColor}}variant="light" fixed='top'>
-    <Navbar.Brand style={{color: this.state.color}} href="/">FI</Navbar.Brand>
+    <Navbar.Brand style={{color: this.state.color}} href="/">
+        <img src={icon}  width="30"
+        height="30"
+        className="d-inline-block align-top"></img>
+      </Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link style={{color: this.state.color}} href={process.env.PUBLIC_URL+"/#/"}>Home</Nav.Link>
       <Nav.Link style={{color: this.state.color}} href={process.env.PUBLIC_URL+"/#/memory"}>Food and Memory</Nav.Link>
       <Nav.Link style={{color: this.state.color}}href={process.env.PUBLIC_URL+"/#/culture"}>Food and Culture</Nav.Link>
       <Nav.Link style={{color: this.state.color}}href={process.env.PUBLIC_URL+"/#/society"}>Food and Society</Nav.Link>
-      <Nav.Link style={{color: this.state.color}}href={process.env.PUBLIC_URL+"/#/"}>Works Cited</Nav.Link>
+      <Nav.Link style={{color: this.state.color}}href={process.env.PUBLIC_URL+"/#/workscited"}>Works Cited</Nav.Link>
 
     </Nav>
   </Navbar>
+  </>
     );
     }
 }
