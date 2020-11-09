@@ -23,7 +23,7 @@ export default function App() {
               <Route exact path={"/englishartifact/#/memory"} component={Memory} />
               <Route exact path={"/englishartifact/#/culture"} component={Culture} />
               <Route exact path={"/englishartfiact/#/society"} component={Society} />
-              <Route exact path={'/englishartifact/#'} component={Home} />
+              <Route exact path={'/englishartifact/'} component={Home} />
             </Switch> 
             </HashRouter>
             </>
