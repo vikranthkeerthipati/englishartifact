@@ -49,7 +49,7 @@ export default class EngNavbar extends React.Component{
       <meta http-equiv='cache-control' content='no-cache'></meta>
       </head>
     <Navbar style={{backgroundColor:this.state.bkgColor}}variant="light" fixed='top'>
-    <Navbar.Brand style={{color: this.state.color}} href="/">
+    <Navbar.Brand style={{color: this.state.color}} href={process.env.PUBLIC_URL+"/#/"}>
         <img src={icon}  width="30"
         height="30"
         className="d-inline-block align-top"></img>
