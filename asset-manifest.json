@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/englishartifact/static/css/main.3fffa47f.chunk.css",
-    "main.js": "/englishartifact/static/js/main.28b9bf44.chunk.js",
-    "main.js.map": "/englishartifact/static/js/main.28b9bf44.chunk.js.map",
+    "main.js": "/englishartifact/static/js/main.7264091b.chunk.js",
+    "main.js.map": "/englishartifact/static/js/main.7264091b.chunk.js.map",
     "runtime-main.js": "/englishartifact/static/js/runtime-main.5c887e48.js",
     "runtime-main.js.map": "/englishartifact/static/js/runtime-main.5c887e48.js.map",
     "static/js/2.3a9adccb.chunk.js": "/englishartifact/static/js/2.3a9adccb.chunk.js",
@@ -35,6 +35,6 @@
     "static/js/runtime-main.5c887e48.js",
     "static/js/2.3a9adccb.chunk.js",
     "static/css/main.3fffa47f.chunk.css",
-    "static/js/main.28b9bf44.chunk.js"
+    "static/js/main.7264091b.chunk.js"
   ]
 }
