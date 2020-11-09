@@ -21,9 +21,9 @@ export default function App() {
               <Switch>
               
               <Route exact path={"/englishartifact/#/memory"} component={Memory} />
-              <Route path={"/englishartifact/#/culture"} component={Culture} />
-              <Route path={"/englishartfiact/#/society"} component={Society} />
-              <Route path={'/englishartifact/#'} component={Home} />
+              <Route exact path={"/englishartifact/#/culture"} component={Culture} />
+              <Route exact path={"/englishartfiact/#/society"} component={Society} />
+              <Route exact path={'/englishartifact/#'} component={Home} />
             </Switch> 
             </HashRouter>
             </>
