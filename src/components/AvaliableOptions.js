@@ -17,7 +17,7 @@ let jumboStyle = {
 let cardStyle = {
     marginTop: "15vh",
     borderRadius:"10px",
-    height:"50vh",
+    height:"60vh",
     zIndex: "1000",
     backgroundColor: "rgba(233,225,213,0.9)"
 

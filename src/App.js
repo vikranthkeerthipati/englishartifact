@@ -18,10 +18,10 @@ export default function App() {
       <>
               <Switch>
               
-              <Route path="/memory" component={Memory} />
-              <Route path="/culture" component={Culture} />
-              <Route path="/society" component={Society} />
-              <Route path="/" component={Home} />
+              <Route path={process.env.PUBLIC_URL+"/memory"} component={Memory} />
+              <Route path={process.env.PUBLIC_URL+"/culture"} component={Culture} />
+              <Route path={process.env.PUBLIC_URL + "/society"} component={Society} />
+              <Route path={process.env.PUBLIC_URL+'/'} component={Home} />
             </Switch> 
 
             </>
