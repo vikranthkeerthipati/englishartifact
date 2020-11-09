@@ -20,10 +20,10 @@ export default function App() {
       <HashRouter>
               <Switch>
               
-              <Route exact path={"/englishartifact/#/memory"} component={Memory} />
-              <Route exact path={"/englishartifact/#/culture"} component={Culture} />
-              <Route exact path={"/englishartfiact/#/society"} component={Society} />
-              <Route exact path={'/englishartifact/'} component={Home} />
+              <Route path={"/memory"} component={Memory} />
+              <Route path={"/culture"} component={Culture} />
+              <Route path={"/society"} component={Society} />
+              <Route path={'/'} component={Home} />
             </Switch> 
             </HashRouter>
             </>
