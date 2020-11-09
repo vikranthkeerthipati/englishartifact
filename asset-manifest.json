@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/englishartifact/static/css/main.3fffa47f.chunk.css",
-    "main.js": "/englishartifact/static/js/main.ab3ccc9c.chunk.js",
-    "main.js.map": "/englishartifact/static/js/main.ab3ccc9c.chunk.js.map",
+    "main.js": "/englishartifact/static/js/main.31565f29.chunk.js",
+    "main.js.map": "/englishartifact/static/js/main.31565f29.chunk.js.map",
     "runtime-main.js": "/englishartifact/static/js/runtime-main.5c887e48.js",
     "runtime-main.js.map": "/englishartifact/static/js/runtime-main.5c887e48.js.map",
-    "static/js/2.4c4d8c1c.chunk.js": "/englishartifact/static/js/2.4c4d8c1c.chunk.js",
-    "static/js/2.4c4d8c1c.chunk.js.map": "/englishartifact/static/js/2.4c4d8c1c.chunk.js.map",
+    "static/js/2.3a9adccb.chunk.js": "/englishartifact/static/js/2.3a9adccb.chunk.js",
+    "static/js/2.3a9adccb.chunk.js.map": "/englishartifact/static/js/2.3a9adccb.chunk.js.map",
     "static/js/3.8b8d8a40.chunk.js": "/englishartifact/static/js/3.8b8d8a40.chunk.js",
     "static/js/3.8b8d8a40.chunk.js.map": "/englishartifact/static/js/3.8b8d8a40.chunk.js.map",
     "index.html": "/englishartifact/index.html",
     "static/css/main.3fffa47f.chunk.css.map": "/englishartifact/static/css/main.3fffa47f.chunk.css.map",
-    "static/js/2.4c4d8c1c.chunk.js.LICENSE.txt": "/englishartifact/static/js/2.4c4d8c1c.chunk.js.LICENSE.txt",
+    "static/js/2.3a9adccb.chunk.js.LICENSE.txt": "/englishartifact/static/js/2.3a9adccb.chunk.js.LICENSE.txt",
     "static/media/avaliableoptions.6203a597.jpg": "/englishartifact/static/media/avaliableoptions.6203a597.jpg",
     "static/media/bridge.92433817.jpg": "/englishartifact/static/media/bridge.92433817.jpg",
     "static/media/culture.9667863d.jpg": "/englishartifact/static/media/culture.9667863d.jpg",
@@ -27,12 +27,13 @@
     "static/media/invention.3db97245.jpg": "/englishartifact/static/media/invention.3db97245.jpg",
     "static/media/mapleine.637f502b.png": "/englishartifact/static/media/mapleine.637f502b.png",
     "static/media/psych.fdd138a5.jpg": "/englishartifact/static/media/psych.fdd138a5.jpg",
-    "static/media/society.c8035276.jpg": "/englishartifact/static/media/society.c8035276.jpg"
+    "static/media/society.c8035276.jpg": "/englishartifact/static/media/society.c8035276.jpg",
+    "static/media/works_cited.0d74bc82.pdf": "/englishartifact/static/media/works_cited.0d74bc82.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.5c887e48.js",
-    "static/js/2.4c4d8c1c.chunk.js",
+    "static/js/2.3a9adccb.chunk.js",
     "static/css/main.3fffa47f.chunk.css",
-    "static/js/main.ab3ccc9c.chunk.js"
+    "static/js/main.31565f29.chunk.js"
   ]
 }
