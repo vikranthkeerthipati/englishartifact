@@ -54,7 +54,7 @@ export default class AvaliableOptions extends React.Component{
       to remember our loved ones.
     </Card.Text>
   </Card.Body>
-  <Button variant="dark" href="/memory" style={cardButtonStyle}>Visit!</Button>
+  <Button variant="dark" href={process.env.PUBLIC_URL+"/#/memory"} style={cardButtonStyle}>Visit!</Button>
 </Card>
 </Col>
 <Col><Card style={cardStyle}>
@@ -65,7 +65,7 @@ export default class AvaliableOptions extends React.Component{
       Food plays an integral part in culture, and is often passed down from generation to generation.
     </Card.Text>
   </Card.Body>
-  <Button variant="dark" href="/culture" style={cardButtonStyle}>Visit!</Button>
+  <Button variant="dark" href={process.env.PUBLIC_URL+"/#/culture"} style={cardButtonStyle}>Visit!</Button>
 </Card></Col>
 <Col><Card style={cardStyle}>
   <Card.Img variant="top" src={fad} style={cardImgStyle}/>
@@ -75,7 +75,7 @@ export default class AvaliableOptions extends React.Component{
       As food evolves, so do our habits. It's amazing to see how our current society can revolve around past advancements in food.
     </Card.Text>
   </Card.Body>
-  <Button variant="dark" href="/habits" style={cardButtonStyle}>Visit!</Button>
+  <Button variant="dark" href={process.env.PUBLIC_URL+"/#/society"} style={cardButtonStyle}>Visit!</Button>
 
 </Card>
 </Col>
