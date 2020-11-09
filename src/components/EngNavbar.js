@@ -46,7 +46,7 @@ export default class EngNavbar extends React.Component{
     <Navbar style={{backgroundColor:this.state.bkgColor}}variant="light" fixed='top'>
     <Navbar.Brand style={{color: this.state.color}} href="/">FI</Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link style={{color: this.state.color}} href={"/englishartifacte/#/"}>Home</Nav.Link>
+      <Nav.Link style={{color: this.state.color}} href={"/englishartifact/#/"}>Home</Nav.Link>
       <Nav.Link style={{color: this.state.color}} href={"/englishartifact/#/memory"}>Food and Memory</Nav.Link>
       <Nav.Link style={{color: this.state.color}}href={"/englishartifact/#/culture"}>Food and Culture</Nav.Link>
       <Nav.Link style={{color: this.state.color}}href={"/englishartifact/#/society"}>Food and Society</Nav.Link>
