@@ -78,7 +78,7 @@ export default function Society(){
                 <Col md ={5}>
                 <Fade left>
                 <div style={{backgroundColor:"rgba(252,210,108,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
-                    <Button class="linkButton" style={linkStyle} onClick={handleMShow}><h3>Witness the rise and fall of Mapleine!</h3></Button>                    
+                    <Button class="linkButton" style={linkStyle} onClick={handleMShow}><h3>Witness the rise and fall of Mapleine</h3></Button>                    
                 </div>
                 <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={mShow} onHide={handleMClose}>
         <Modal.Header closeButton>
@@ -97,7 +97,7 @@ export default function Society(){
         </Modal.Footer>
       </Modal>
                 <div style={{backgroundColor:"rgba(252,210,108,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
-                    <Button class="linkButton" style={linkStyle} onClick={handleMoShow}><h3>Experience Mochi in the US!</h3></Button> 
+                    <Button class="linkButton" style={linkStyle} onClick={handleMoShow}><h3>Experience Mochi in the US</h3></Button> 
                         <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={moShow} onHide={handleMoClose}>
             <Modal.Header closeButton>
             <Modal.Title>How Mochi Made Its Way to the US</Modal.Title>
@@ -166,7 +166,7 @@ export default function Society(){
                 <Col md ={1}></Col>
                 <Col md={5}>
                 <Fade right>
-                <div style={{backgroundColor:"rgba(128,119,127,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
+                <div style={{backgroundColor:"rgba(159,51,48,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
                     <Button class="linkButton" style={linkStyle} onClick={handleBShow}><h3 style={{color:"white"}}>Fast Food and Future Generations</h3></Button>                    
                 </div>
                 <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={bShow} onHide={handleBClose}>
@@ -188,7 +188,7 @@ export default function Society(){
           </Button>
         </Modal.Footer>
       </Modal>
-                <div style={{backgroundColor:"rgba(128,119,127,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
+                <div style={{backgroundColor:"rgba(159,51,48,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
                     <Button class="linkButton" style={linkStyle} onClick={handleCShow}><h3 style={{color:"white"}}>The Health Effects of Fast Food</h3></Button> 
                         <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={cShow} onHide={handleCClose}>
             <Modal.Header closeButton>

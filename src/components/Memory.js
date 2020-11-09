@@ -86,7 +86,7 @@ export default function Memory() {
                     <Col md={5}>
                     <Fade right>
                 <div style={{backgroundColor:"rgba(128,119,127,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
-                    <Button class="linkButton" style={linkStyle} onClick={handleMShow}><h3 style={{color:"white"}}>Discover food nostalgia!</h3></Button>                    
+                    <Button class="linkButton" style={linkStyle} onClick={handleMShow}><h3 style={{color:"white"}}>Food Nostalgia in Our Lives</h3></Button>                    
                 </div>
                 <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={mShow} onHide={handleMClose}>
         <Modal.Header closeButton>
@@ -107,7 +107,7 @@ export default function Memory() {
         </Modal.Footer>
       </Modal>
                 <div style={{backgroundColor:"rgba(128,119,127,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
-                    <Button class="linkButton" style={linkStyle} onClick={handleMoShow}><h3 style={{color:"white"}}>Discover food and mood!</h3></Button> 
+                    <Button class="linkButton" style={linkStyle} onClick={handleMoShow}><h3 style={{color:"white"}}>The Effects of Food on Mood</h3></Button> 
                         <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={moShow} onHide={handleMoClose}>
             <Modal.Header closeButton>
             <Modal.Title>How Food Affects Mood</Modal.Title>
