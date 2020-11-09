@@ -9,7 +9,11 @@ import EngNavbar from './EngNavbar'
 import '../css/linkCards.css'
 import Iframe from 'react-iframe'
 
-
+let linkStyle = {
+    color: "black",
+    background:"none",
+    border: "none"
+}
 let jumboStyle = {
     minHeight:"100vh",
     backgroundImage:  `url(${societyImage})`,
@@ -64,7 +68,7 @@ export default function Society(){
                 <Col md ={5}>
                 <Fade left>
                 <div style={{backgroundColor:"rgba(252,210,108,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
-                    <Button class="coolLink" onClick={handleMShow}><h3>Witness the rise and fall of Mapleine!</h3></Button>                    
+                    <Button style={linkStyle} onClick={handleMShow}><h3>Witness the rise and fall of Mapleine!</h3></Button>                    
                 </div>
                 <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={mShow} onHide={handleMClose}>
         <Modal.Header closeButton>
@@ -83,7 +87,7 @@ export default function Society(){
         </Modal.Footer>
       </Modal>
                 <div style={{backgroundColor:"rgba(252,210,108,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
-                    <Button class="coolLink" onClick={handleMoShow}><h3>Experience mochi in the US!</h3></Button> 
+                    <Button style={linkStyle} onClick={handleMoShow}><h3>Experience mochi in the US!</h3></Button> 
                         <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={moShow} onHide={handleMoClose}>
             <Modal.Header closeButton>
             <Modal.Title>How Mochi Made Its Way to the US</Modal.Title>
@@ -106,7 +110,7 @@ export default function Society(){
                 </div>
                 </Fade>
                 <div style={{backgroundColor:"rgba(252,210,108,0.9)",marginTop:"5vh", padding:"4vh 4vh"}}>
-                    <Button class="coolLink" onClick={handleAShow}><h3>The Evolution of Southern Food</h3></Button> 
+                    <Button style={linkStyle} onClick={handleAShow}><h3>The Evolution of Southern Food</h3></Button> 
                         <Modal style={{minWidth:"100vh",maxWidth:"none"}}show={aShow} onHide={handleAClose}>
             <Modal.Header closeButton>
             <Modal.Title>Southern Food and its Roots</Modal.Title>

@@ -1,4 +1,5 @@
 import {
+  HashRouter,
   BrowserRouter as Router,
   Switch,
   Route,
@@ -16,15 +17,17 @@ export default function App() {
 
   return (
       <>
+      <HashRouter>
               <Switch>
               
-              <Route path={process.env.PUBLIC_URL+"/memory"} component={Memory} />
-              <Route path={process.env.PUBLIC_URL+"/culture"} component={Culture} />
-              <Route path={process.env.PUBLIC_URL + "/society"} component={Society} />
-              <Route path={process.env.PUBLIC_URL+'/'} component={Home} />
+              <Route exact path={"/memory"} component={Memory} />
+              <Route path={"/culture"} component={Culture} />
+              <Route path={"/society"} component={Society} />
+              <Route path={'/'} component={Home} />
             </Switch> 
-
+            </HashRouter>
             </>
+            
   );
 
 
