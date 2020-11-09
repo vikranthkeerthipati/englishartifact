@@ -19,18 +19,18 @@ export default function WorksCited(){
     return (
     <>
         <EngNavbar color="black"></EngNavbar>
-        <Fade right>
         <Jumbotron style={jumboStyle} fluid>
             <Row>
                 <Col md={6}></Col>
                 <Col md={6}>
+                <Fade right>
                     <h1>The Sources</h1>
                     <Button variant="dark" class="linkstyle" href={worksCited} target = "_blank">Click here to learn the sources</Button>
+                    </Fade>
                 </Col>
             </Row>
 
         </Jumbotron>
-        </Fade>
         </>
     );
 
