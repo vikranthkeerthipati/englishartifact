@@ -51,7 +51,6 @@ export default class Home extends React.Component{
               <p>In "Vinegar and Char," section II focuses heavily on food and how it can shape our daily lives as well as our memories. Throughout the website, you'll see references to this section and the connection between food and literature with the themes discussed.</p>
               <br></br>
               <h4>Scroll down to start discovering!</h4>
-
               </Bounce>
               </Col>
 
